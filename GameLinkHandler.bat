@@ -6,7 +6,8 @@
 :: contents into the 'my games' folder.
 
 :: Set some locations
-set docs=D:\Documents
+set docs=%~dp0
+set docs=%docs:~0,-1%
 set games=%docs%\"my games"
 
 :: List folders in docs folder
